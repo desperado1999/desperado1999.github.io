@@ -19,6 +19,9 @@
 <li>制作博客相册，可以考虑使用github公开库做</li>
 </ol>
 ]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
       <tags>
         <tag>Hexo</tag>
       </tags>
@@ -26,7 +29,8 @@
   <entry>
     <title>About</title>
     <url>/2020/03/16/About/</url>
-    <content><![CDATA[<h1 id="Peng-Huang"><a href="#Peng-Huang" class="headerlink" title="Peng Huang"></a>Peng Huang</h1><h2 id="Education"><a href="#Education" class="headerlink" title="Education"></a>Education</h2><ul>
+    <content><![CDATA[<h1 id="Peng-Huang"><a href="#Peng-Huang" class="headerlink" title="Peng Huang"></a>Peng Huang</h1><p><img src="/images/About/me.jpg" alt=""></p>
+<h2 id="Education"><a href="#Education" class="headerlink" title="Education"></a>Education</h2><ul>
 <li>College student in Informaion Engineering, ISEE, <strong>Zhejiang University</strong>, 2016.0 -Present</li>
 </ul>
 <h2 id="Experience"><a href="#Experience" class="headerlink" title="Experience"></a>Experience</h2><ul>
@@ -45,12 +49,12 @@
 <li>Mail: <a href="mailto:penghuang@zju.edu.cn">penghuang@zju.edu.cn</a></li>
 </ul>
 <h2 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h2><p><i class="fa fa-github fa-2x"></i> <a href="https://github.com/desperado1999" target="_blank" rel="noopener">Desperado1999</a></p>
-<p><i class="fa fa-blog fa-2x"></i> <a href="desperado1999.github.io">My Blog</a></p>
+<p><i class="fas fa-blog fa-2x"></i> <a href="desperado1999.github.io">My Blog</a></p>
 <head> 
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script> 
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/v4-shims.js"></script> 
 <meta name="generator" content="Hexo 4.2.0"></head> 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">]]></content>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css">]]></content>
       <categories>
         <category>Me</category>
       </categories>
