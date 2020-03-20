@@ -102,7 +102,8 @@
 <blockquote>
 <p>搭建环境 <br>本地：WSL <br>服务器端：ubuntu 18.04 <br>服务器端: github </p>
 </blockquote>
-<h1 id="搭建思路"><a href="#搭建思路" class="headerlink" title="搭建思路"></a>搭建思路</h1><p>为了不让初学者迷糊，这里引用一张图便于理解<br><img src="/images/hexo_blog/hexo_process.jpg" alt="Hexo搭建博客框架"></p>
+<h1 id="搭建思路"><a href="#搭建思路" class="headerlink" title="搭建思路"></a>搭建思路</h1><p>为了不让初学者迷糊，这里引用一张图便于理解</p>
+<p><img src="/images/hexo_blog/hexo_process.jpg" alt="Hexo搭建博客框架"></p>
 <ol>
 <li>hexo程序在本地计算机中，自己写好文章之后通过hexo程序生成静态的网页。</li>
 <li>通过hexo deploy服务将生成的静态网页push到远程仓库中 </li>
@@ -327,7 +328,7 @@
     <ul class="list-inline">
       <li>
         &copy;
-        2015-2020
+        2020
         Desperado
       </li>
       <li>
@@ -389,10 +390,6 @@
     
     <li class="nav-item">
       <a class="nav-item-link" href="/tags">标签</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
     </li>
     
     <li class="nav-item">
@@ -613,6 +610,30 @@
     viewer_init()
 </script>
 
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+  });
+
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+  var ayerConfig = {
+    mathjax: true
+  }
+</script>
 
 
 

@@ -47,7 +47,7 @@
 <h2 id="Contact"><a href="#Contact" class="headerlink" title="Contact"></a>Contact</h2><ul>
 <li>Mail: <a href="mailto:penghuang@zju.edu.cn">penghuang@zju.edu.cn</a></li>
 </ul>
-<h2 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h2><p><i class="fa fa-github fa-2x"></i> <a href="https://github.com/desperado1999" target="_blank" rel="noopener">Desperado1999</a></p>
+<h2 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h2><p><i class="fa fa-github fa-2x"></i> <a href="https://github.com/desperado1999" target="_blank" rel="noopener">Github</a></p>
 <p><i class="fa fa-blogger-b fa-2x"></i> <a href="https://desperado1999.github.io" target="_blank" rel="noopener">My Blog</a></p>
 <head> 
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script> 
@@ -65,7 +65,8 @@
 <blockquote>
 <p>搭建环境 <br>本地：WSL <br>服务器端：ubuntu 18.04 <br>服务器端: github </p>
 </blockquote>
-<h1 id="搭建思路"><a href="#搭建思路" class="headerlink" title="搭建思路"></a>搭建思路</h1><p>为了不让初学者迷糊，这里引用一张图便于理解<br><img src="/images/hexo_blog/hexo_process.jpg" alt="Hexo搭建博客框架"></p>
+<h1 id="搭建思路"><a href="#搭建思路" class="headerlink" title="搭建思路"></a>搭建思路</h1><p>为了不让初学者迷糊，这里引用一张图便于理解</p>
+<p><img src="/images/hexo_blog/hexo_process.jpg" alt="Hexo搭建博客框架"></p>
 <ol>
 <li>hexo程序在本地计算机中，自己写好文章之后通过hexo程序生成静态的网页。</li>
 <li>通过hexo deploy服务将生成的静态网页push到远程仓库中 </li>
