@@ -173,9 +173,9 @@
 </ol>
 <h1 id="ToDo"><a href="#ToDo" class="headerlink" title="ToDo"></a>ToDo</h1><ol>
 <li>考虑文章中显示create time 和 update time, 并考虑如何使用update time进行排序</li>
-<li>博客主页其他修复</li>
 <li>制作博客相册，可以考虑使用github公开库</li>
 <li>font-awesome blog 图标显示不出来，不知道是不是版本问题</li>
+<li>next主题下使用valine评论系统失效</li>
 </ol>
 ]]></content>
       <categories>
