@@ -17,18 +17,18 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"desperado1999.github.io","root":"/","scheme":"Muse","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"desperado1999.github.io","root":"/","scheme":"Muse","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="遇到的问题访问Google或者YouTube等站点正常，但是上不了scholar.google.com之前为了能科学上网，在vultr上买了个VPS用于搭建服务器。但是今天突然发现可以正常的上Google，但是不能上Google Scholar，这简直是服务器一半的功能都废了，不能忍。大致情况如下：  可以正常上Google，Youtube等网站，说明不是V2ray的问题。 在vultr的VPS中">
+  <meta name="description" content="搭建v2ray服务器步骤以及过程中遇到的问题记录">
 <meta property="og:type" content="article">
 <meta property="og:title" content="搭建v2ray服务器">
 <meta property="og:url" content="https://desperado1999.github.io/2020/03/26/%E6%90%AD%E5%BB%BAv2ray%E6%9C%8D%E5%8A%A1%E5%99%A8/index.html">
 <meta property="og:site_name" content="Learning And Thinking">
-<meta property="og:description" content="遇到的问题访问Google或者YouTube等站点正常，但是上不了scholar.google.com之前为了能科学上网，在vultr上买了个VPS用于搭建服务器。但是今天突然发现可以正常的上Google，但是不能上Google Scholar，这简直是服务器一半的功能都废了，不能忍。大致情况如下：  可以正常上Google，Youtube等网站，说明不是V2ray的问题。 在vultr的VPS中">
+<meta property="og:description" content="搭建v2ray服务器步骤以及过程中遇到的问题记录">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-03-26T09:53:21.000Z">
-<meta property="article:modified_time" content="2020-03-26T09:59:32.606Z">
+<meta property="article:modified_time" content="2020-03-27T07:58:29.340Z">
 <meta property="article:author" content="Desperado">
 <meta property="article:tag" content="v2ray">
 <meta name="twitter:card" content="summary">
@@ -118,6 +118,21 @@
     <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
 
   </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/2020/03/16/About" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
@@ -174,10 +189,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-03-26 17:53:21 / Modified: 17:59:32" itemprop="dateCreated datePublished" datetime="2020-03-26T17:53:21+08:00">2020-03-26</time>
+              <time title="Created: 2020-03-26 17:53:21" itemprop="dateCreated datePublished" datetime="2020-03-26T17:53:21+08:00">2020-03-26</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-03-27 15:58:29" itemprop="dateModified" datetime="2020-03-27T15:58:29+08:00">2020-03-27</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -199,7 +220,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h1><h2 id="访问Google或者YouTube等站点正常，但是上不了scholar-google-com"><a href="#访问Google或者YouTube等站点正常，但是上不了scholar-google-com" class="headerlink" title="访问Google或者YouTube等站点正常，但是上不了scholar.google.com"></a>访问Google或者YouTube等站点正常，但是上不了scholar.google.com</h2><p>之前为了能科学上网，在vultr上买了个VPS用于搭建服务器。但是今天突然发现可以正常的上Google，但是不能上Google Scholar，这简直是服务器一半的功能都废了，不能忍。大致情况如下：</p>
+        <p>搭建v2ray服务器步骤以及过程中遇到的问题记录</p>
+<a id="more"></a>
+<h1 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h1><h2 id="访问Google或者YouTube等站点正常，但是上不了scholar-google-com"><a href="#访问Google或者YouTube等站点正常，但是上不了scholar-google-com" class="headerlink" title="访问Google或者YouTube等站点正常，但是上不了scholar.google.com"></a>访问Google或者YouTube等站点正常，但是上不了scholar.google.com</h2><p>之前为了能科学上网，在vultr上买了个VPS用于搭建服务器。但是今天突然发现可以正常的上Google，但是不能上Google Scholar，这简直是服务器一半的功能都废了，不能忍。大致情况如下：</p>
 <ol>
 <li>可以正常上Google，Youtube等网站，说明<strong>不是V2ray的问题</strong>。</li>
 <li>在vultr的VPS中发现不能正常上scholar.google.com，所以确定是服务器不可以正常上Google Scholar。</li>
@@ -319,11 +342,13 @@
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
+          
         <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
+          
         <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
