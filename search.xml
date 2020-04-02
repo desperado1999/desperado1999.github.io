@@ -1,6 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>工具推荐</title>
+    <url>/2020/04/02/%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<p>一些电脑上的实用工具推荐</p>
+<blockquote>
+<p>所有软件都不是流氓软件，不带弹窗或其他广告</p>
+</blockquote>
+<a id="more"></a>
+
+<h1 id="win10-工具"><a href="#win10-工具" class="headerlink" title="win10 工具"></a>win10 工具</h1><h2 id="Geek"><a href="#Geek" class="headerlink" title="Geek"></a>Geek</h2><p>&emsp; <a href="https://geekuninstaller.com/" target="_blank" rel="noopener">官网链接</a>  软件有<strong>免费版</strong>和<strong>付费版</strong>，对于一般人而言免费版已经够用了<br>软件界面如下：<br><img src="/images/%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/geek_1.png" alt="geek界面"></p>
+<p>&emsp; <strong>Geek</strong>是一款win10上的软件卸载工具，可以卸载用户安装的软件以及通过Microsoft Store安装的系统软件。</p>
+<p>&emsp; 相比于win10系统自带的卸载方式的优点是：\</p>
+<ol>
+<li><strong>可以卸载几乎所有软件</strong>，甚至包括win10商店安装的软件。而win10自带的卸载方式找不到某些已安装的软件，这样的话只能通过软件自带的卸载工具卸载。</li>
+<li><strong>软件很轻量化</strong>，软件只有6M大小，而且软件为绿色软件，不需要安装，开箱即用</li>
+<li><strong>卸载完之后会自动检测注册表及其他残留进行删除</strong></li>
+</ol>
+<h2 id="Listary"><a href="#Listary" class="headerlink" title="Listary"></a>Listary</h2><p>&emsp; <a href="https://www.listary.com/" target="_blank" rel="noopener">官网链接</a><br>软件有<strong>免费版</strong>和<strong>付费版</strong>，对于一般人而言免费版已经够用了<br>软件界面如下：<br><img src="/images/%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/listary_1.png" alt="Listary界面"></p>
+<p>&emsp; <strong>Litary</strong>是一款win10上的程序快捷启动器&amp;&amp;文件快捷查找器。使用方法为双击Ctrl键，在弹出的对话框中输入文件或者程序的名称，则可以快速的定位到文件，比手动查找速度提高<strong>非常非常多</strong>。同时还有一些快捷键可以轻松的限制搜索范围。</p>
+<p>&emsp; 该软件优点为：</p>
+<ol>
+<li><strong>相比手动查找，速度提高了非常多</strong>。只要你记得文件名称，则可以快速的帮你定位。</li>
+<li><strong>软件轻量化</strong>，同时官网还有绿色不需要安装的版本。</li>
+<li>还有更多其他功能比如快捷搜索引擎等（本人还没用过）</li>
+</ol>
+<p>&emsp; 该软件缺点为：</p>
+<ol>
+<li>设置为开机启动之后，任务管理器显示开机启动对启动速度影响较大。</li>
+</ol>
+<h1 id="浏览器插件-Chrome-amp-amp-Firefox"><a href="#浏览器插件-Chrome-amp-amp-Firefox" class="headerlink" title="浏览器插件(Chrome &amp;&amp; Firefox)"></a>浏览器插件(Chrome &amp;&amp; Firefox)</h1><blockquote>
+<p>一下软件没有特殊说明均可以在Chrome或者Firefox官方的插件市场找到。什么？你上不了Chrome的Web Store?建议先搭建一个自己的**服务器</p>
+</blockquote>
+<h2 id="Vimium"><a href="#Vimium" class="headerlink" title="Vimium"></a>Vimium</h2><p>&emsp; 这个插件将<strong>浏览网页的过程中需要的操作绝大部分用快捷键代替</strong>，几乎可以彻底摆脱鼠标，如果快捷键熟练的话，可以提高使用浏览器的效率。同时快捷键和Vim的快捷键高度重合，所以如果你是一名Vim使用者的话，同时你又希望提高自己的网页浏览效率的话，这个插件你必须常使用一下。</p>
+<p>&emsp; 插件优点：</p>
+<ol>
+<li>很大的提高浏览器使用效率</li>
+<li>对于特定的网页可以禁用或者使用新的快捷键，防止在比如有内嵌终端的网页中使用终端困难。</li>
+</ol>
+<p>&emsp; 插件缺点：</p>
+<ol>
+<li>如果进入浏览器之后打开了上次没有关闭的页面，则需要刷新页面才可以使用该插件，否则插件无效。</li>
+<li>在浏览器自己的页面，比如设置，历史等界面中是不能使用该页面的。</li>
+</ol>
+<h2 id="Dark-Reader"><a href="#Dark-Reader" class="headerlink" title="Dark Reader"></a>Dark Reader</h2><p>&emsp; 这个插件将<strong>浏览的网页改为暗黑模式</strong>。在目前的浏览器暗黑模式中，只支持将浏览器自己的页面比如设置，历史等改为暗黑模式。但是对于Google或者Bilibil等网页不支持暗黑模式，这个插件可以将网页强行改为暗黑模式</p>
+<p>插件效果界面如下：<br><img src="/images/%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/listary_1.png" alt="Listary界面"></p>
+<p><strong>适用场景</strong></p>
+<ol>
+<li>喜欢暗黑模式浏览网页的人</li>
+<li>屏幕过于垃圾，看久了屏幕眼睛会难受的人，用暗黑模式可能一定程度上可以缓解</li>
+</ol>
+<p>&emsp; 插件缺点</p>
+<ol>
+<li>对于某些网页强行改为暗黑模式可能会导致效果更差， 需要手动调整为原来的模式。</li>
+</ol>
+<h2 id="SwitchOmega"><a href="#SwitchOmega" class="headerlink" title="SwitchOmega"></a>SwitchOmega</h2><h2 id="OneTab"><a href="#OneTab" class="headerlink" title="OneTab"></a>OneTab</h2><head> 
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script> 
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/v4-shims.js"></script> 
+</head> 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+]]></content>
+      <categories>
+        <category>tools</category>
+      </categories>
+  </entry>
+  <entry>
     <title>搭建v2ray服务器</title>
     <url>/2020/03/26/%E6%90%AD%E5%BB%BAv2ray%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
     <content><![CDATA[<p>搭建v2ray服务器步骤以及过程中遇到的问题记录</p>
