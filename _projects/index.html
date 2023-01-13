@@ -1,0 +1,494 @@
+<html>
+    <head>
+        <meta charset=“UTF-8”>
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,bold,900,600">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		  <!-- Custom styles for this template -->
+ 		 <link href="/assets/css/infomasker.css" rel="stylesheet">
+
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+ 	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+		<title>InfoMasker</title>
+    </head>
+    <body>
+        <div class = "global_container">
+			<div class = "section"  >
+
+				<h1>InfoMasker: Preventing Eavesdropping Using Phoneme-Based Noise</h1>
+				<div class ="boxed">
+					<p> InfoMasker is a highly effective anti-eavesdropping system. It can jam nearby microphones with human-inaudible ultrasound noise. The recorded noise induced by InfoMasker can effectively mislead state-of-the-art (SOTA) auto-speech-recognition (ASR) systems. Besides, the noise is sufficiently robust against various speech enhancement methods, such as noise reduction and speech separation.
+					</p>
+				</div>
+    </body>
+
+    <div class ="boxed">
+        <!--img src="assets/introduction_system.pdf" width="800px" height="300px"-->
+        <img src="/assets/infomasker_project/introduction_system.png">
+
+    </div>
+
+    <h2> Audio Examples </h2>
+
+    <br>
+    <p>
+        <font size="5"> <b>Tips:</b> </font>
+        <br>
+        <font size="3"> &#9733 We recommend <b>not</b> listening to the <b>origin</b> audio samples and not reading the transcript <b>before</b> listening to the noisy audios. The priori knowledge will weaken the jamming effectiveness of these noises for human ear. </font>
+
+        <br>
+        <br>
+
+        <font size="3"> &#9733 We recommend using <b>headphones</b> instead of external speakers to listen to these audio examples. </font>
+
+        <br>
+        <br>
+
+        <font size="3"> &#9733 The <b>denoised noisy audios</b> are used to demonstrate the <b>robustness</b> of these noises against SOTA speech enhancement methods. </font>
+    </p>
+
+    <br>
+
+    <h3> Digital Domain Example 1</h3>
+    <br>
+    
+    <div style="margin-top=5em;">
+        <table>
+            <tr>
+            <td> Noise Type </td>
+            <td> Noisy Audio (SNR=0) </td>
+            <td> Denoised Noisy Audio </td>
+            </tr>
+
+            <tr>
+                <td> Our Noise </td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio/1_our.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio/1_our_enhanced.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> White Noise </td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio/1_white_noise.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio/1_white_noise_enhanced.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td>1 Series Speech Noise </td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio/1_speech_1.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio/1_speech_1_enhanced.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td>2 Series Speech Noise </td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio/1_speech_2.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio/1_speech_2_enhanced.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td>3 Series Speech Noise </td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio/1_speech_3.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio/1_speech_3_enhanced.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td> Original Audio <br> (2300-131720-0010 in Librispeech test-clean) </td>
+
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio/1_origin.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+
+        </table>
+
+        <script>
+            function show_hide_text(section_name) {
+                var x = document.getElementById(section_name);
+                if(x.style.display == 'none'){
+                    x.style.display = 'block';
+                }else{
+                    x.style.display = 'none';
+                }
+            }
+        </script>
+
+        <br>
+        <button onclick="show_hide_text('transcript1')" >Click To Show/Hide The Transcript</button>
+        <br>
+        <div id="transcript1" style="display:none"><p><b>Transcript: </b> It could not be used for electroplating or deposition, nor could it charge storage batteries. All of which are easily within the ability of the direct current.</p></div>
+      
+        <br>
+        <br>
+        <p>
+            The following figure shows the spectrogram of the original audio, the denoised noisy audio jammed by our noise, and the denoised noisy audio jammed by the 3-series speech noise respectively. Compared to the speech noise, our noise retains more noise components after denoising, which reveals the greater robustness of our noise.
+        </p>
+
+        <table>
+            <tr>
+                <td> Our Noise <br> After Denoising </td>
+                <td>
+                    <img src="/assets/infomasker_project/our.png", width="700px">
+                </td>
+
+            </tr>
+
+            <tr>
+                <td> Origin Audio </td>
+                <td>
+                    <img src="/assets/infomasker_project/origin.png", width="700px">
+                </td>
+
+            </tr>
+
+            <tr>
+                <td> 3 Series Speech <br> Noise After <br> Denoising </td>
+                <td>
+                    <img src="/assets/infomasker_project/speech.png", width="700px">
+                </td>
+
+            </tr>
+
+        </table>
+    </div>
+
+    <br>
+    <br>
+
+    <h3> Digital Domain Example 2 </h3>
+    <div style="margin-top=5em;">
+        <table>
+            <tr>
+            <td> Noise Type </td>
+            <td> Noisy Audio (SNR=0) </td>
+            <td> Denoised Noisy Audio </td>
+            </tr>
+
+            <tr>
+                <td> Our Noise </td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio/2_our.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio/2_our_enhanced.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> White Noise </td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio/2_white_noise.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio/2_white_noise_enhanced.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td>1 Series Speech Noise </td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio/2_speech_1.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio/2_speech_1_enhanced.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td>2 Series Speech Noise </td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio/2_speech_2.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio/2_speech_2_enhanced.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td>3 Series Speech Noise </td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio/2_speech_3.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio/2_speech_3_enhanced.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td> Original Audio <br> (4992-41806-0013 in Librispeech test-clean) </td>
+
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio/2_origin.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+        </table>
+
+        <br>
+        <button onclick="show_hide_text('transcript2')" >Click To Show/Hide The Transcript</button>
+        <br>
+        <div id="transcript2" style="display:none"><p><b>Transcript:</b> Approaching the dining table he carefully placed the article in the centre and removed the cloth.</p></div>
+
+    <br>
+    <br>
+    </div>
+
+    <h3> Digital Domain Example 3 </h3>
+        <p>
+            To better illustrate the effectiveness and robustness of our noise, we compare our noise with speech noise in different SNRs. The following audios are denoised noisy audios jammed by different types of noise. Our noise performs much better than others in lower SNRs.
+        </p>
+        <br>
+    <div style="margin-top=5em">
+        <table>
+            <tr>
+            <td> SNR </td>
+            <td> Our Noise </td>
+            <td> 1 Series Speech Noise </td>
+            <td> 3 Series Speech Noise </td>
+            </tr>
+
+            <tr>
+                <td> 0 </td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio_snr/snr0/our.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio_snr/snr0/speech_2.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio_snr/snr0/speech_4.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> -1 </td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio_snr/snr-1/our.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio_snr/snr-1/speech_2.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio_snr/snr-1/speech_4.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> -2 </td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio_snr/snr-2/our.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio_snr/snr-2/speech_2.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio_snr/snr-2/speech_4.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> -3 </td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio_snr/snr-3/our.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio_snr/snr-3/speech_2.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio_snr/snr-3/speech_4.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+             <tr>
+                <td> -4 </td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio_snr/snr-4/our.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio_snr/snr-4/speech_2.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio_snr/snr-4/speech_4.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> -5 </td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio_snr/snr-5/our.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio_snr/snr-5/speech_2.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio_snr/snr-5/speech_4.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+        </table>
+
+        <table>
+            <tr>
+                <td> Original Audio <br> (5105-28241-0017 in Librispeech test-clean) </td>
+
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/audio_snr/origin.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+        </table>
+
+        <br>
+        <button onclick="show_hide_text('transcript3')" >Click To Show/Hide The Transcript</button>
+        <br>
+        <div id="transcript3" style="display:none"><p><b>Transcript:</b> After pondering awhile he said, if we were farther away, I should expect to find a depth of two or three hundred fathoms instead of five fathoms, five fathoms.</p></div>
+
+    </div>
+
+    <br>
+    <br>
+
+    <h3> Real World Examples </h3>
+        <div style="margin-top=5em;">
+        <table>
+            <tr>
+            <td> Noise Type </td>
+            <td> Noisy Audio (SNR=0) </td>
+            <td> Denoised Noisy Audio </td>
+            </tr>
+
+            <tr>
+                <td> Our Noise </td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/real_world_audio/our.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/real_world_audio/our_enh.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> Backdoor </td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/real_world_audio/backdoor.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/real_world_audio/backdoor_enh.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> Patronus </td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/real_world_audio/patronus.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/real_world_audio/Patronus_enh.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> A COTS Device </td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/real_world_audio/device.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/real_world_audio/Device_enh.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td> Original Audio <br> (19-198-0001 in Librispeech train-clean-100) </td>
+
+                <td><audio controls>
+                    <source src="/assets/infomasker_project/real_world_audio/real_world_origin.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+        </table>
+
+        <br>
+        <button onclick="show_hide_text('real_world_transcript')" >Click To Show/Hide The Transcript</button>
+        <br>
+        <div id="real_world_transcript" style="display:none"><p><b>Transcript:</b> Northanger Abbey. This little work was finished in the year eighteen o three, and intended for immediate publication.</p></div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+</html>
