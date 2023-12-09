@@ -21,7 +21,7 @@ social: true  # includes social icons at the bottom of the page
 
 Currently, I'm a third-year Ph.D. student at the School of Cyber Science and Technology, Zhejiang University, China, supervised by [Prof. Zhongjie Ba](https://person.zju.edu.cn/zhongjieba). Before that, I obtained my bachelor's degree from the College of Information Science & Electronic Engineering, Zhejiang University, China.
 
-[CV](https:/desperado1999.github.io/assets/pdf/resume.pdf)
+[CV](/assets/pdf/resume.pdf)
 
 **Research Interests:** IoT Security, Signal Processing, Privacy Protection.
 
