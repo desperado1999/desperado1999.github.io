@@ -11,8 +11,8 @@
   doi = {10.14722/ndss.2023.23457},
   pdf = {infomasker.pdf},
   code = {https://github.com/desperado1999/InfoMasker},
-  slides = {},
-  html = {/projects/},
+  slides = {infomasker_slides.pdf},
+  html = {/assets/projects/index.html},
   month = {February},
   year = {2023},
   selected = {true},
@@ -21,21 +21,23 @@
 @article{textRS2023,
   abbr = {Okland},
   title = {Text-CRS: A Generalized Certified Robustness Framework against Textual Adversarial Attacks},
-  abstract = {},
   author = {Zhang, Xinyu and Hong, Hanbin and Hong, Yuan and Huang, Peng and Wang, Binghui and Ba, Zhongjie and  Ren, Kui},
   publisher = {IEEE},
   month = {July},
   year = {2023},
   selected = {true},
+  pdf = {https://arxiv.org/pdf/2307.16630.pdf},
+  code = {https://github.com/Eyr3/TextCRS},
+  abstract = {The language models, especially the basic text classification models, have been shown to be susceptible to textual adversarial attacks such as synonym substitution and word insertion attacks. To defend against such attacks, a growing body of research has been devoted to improving the model robustness. However, providing provable robustness guarantees instead of empirical robustness is still widely unexplored. In this paper, we propose Text-CRS, a generalized certified robustness framework for natural language processing (NLP) based on randomized smoothing. To our best knowledge, existing certified schemes for NLP can only certify the robustness against  perturbations in synonym substitution attacks. Representing each word-level adversarial operation (i.e., synonym substitution, word reordering, insertion, and deletion) as a combination of permutation and embedding transformation, we propose novel smoothing theorems to derive robustness bounds in both permutation and embedding space against such adversarial operations. To further improve certified accuracy and radius, we consider the numerical relationships between discrete words and select proper noise distributions for the randomized smoothing. Finally, we conduct substantial experiments on multiple language models and datasets. Text-CRS can address all four different word-level adversarial operations and achieve a significant accuracy improvement. We also provide the first benchmark on certified accuracy and radius of four word-level operations, besides outperforming the state-of-the-art certification against synonym substitution attacks.}
 }
 
 @article{ALIF2023,
   abbr = {Okland},
   title = {ALIF: Low-Cost Adversarial Audio Attacks on Black-Box Speech Platforms Using Linguistic Features},
-  abstract = {},
   author = {Cheng, Peng and Wang, Yuwei and Huang, Peng and Ba, Zhongjie and Lin, Xiaodong and Lin, Feng and Lu, Li and Ren, Kui},
   publisher = {IEEE},
   month = {July},
   year = {2023},
   selected = {true},
+  abstract = {Extensive research has revealed that adversarial examples (AE) pose a significant threat to voice-controllable smart devices. Recent studies have proposed black-box adversarial attacks that require only the final transcription from an automatic speech recognition (ASR) system. However, these attacks typically involve many queries to the ASR, resulting in substantial costs. Moreover, AE-based adversarial audio samples are susceptible to ASR updates. In this paper, we identify the root cause of these limitations, namely the inability to construct AE attack samples directly around the decision boundary of deep learning (DL) models. Building on this observation, we propose ALIF, the first black-box adversarial linguistic feature-based attack pipeline. We leverage the reciprocal process of text-to-speech (TTS) and ASR models to generate perturbations in the linguistic embedding space where the decision boundary resides. Based on the ALIF pipeline, we present the ALIF-OTL and ALIF-OTA schemes for launching attacks in both the digital domain and the physical playback environment on four commercial ASRs and voice assistants. Extensive evaluations demonstrate that ALIF-OTL and -OTA significantly improve query efficiency by 97.7% and 73.3%, respectively, while achieving competitive performance compared to existing methods. Notably, ALIF-OTL can generate an attack sample with only one query. Furthermore, our test-of-time experiment validates the robustness of our approach against ASR updates.}
 }
