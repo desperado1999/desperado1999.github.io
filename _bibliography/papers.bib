@@ -1,8 +1,20 @@
 ---
 ---
 
+@article{SecHeadset2025,
+  abbr = {MobiSys'25},
+  title = {SecHeadset: A Practical Privacy Protection System for Real-time Voice Communication},
+  abstract = {Voice communication is convenient while also poses risks of privacy leakage, due to potential interception or eavesdropping during voice transmission. Current protections of voice privacy are almost entirely controlled by communication service providers (CSPs), which operate as a black-box to users thus hard to fully trust. To take back the control of user privacy, in this paper, we introduce \texttt{SecHeadset}, an end-to-end solution for secure voice communication based on voice obfuscation, which is plug-and-play and compatible with various CSPs. Our solution involves two parts. First, we design a voice-like noise masking scheme for voice obfuscation. The noise, mimicking voice characteristics, could effectively obscure users' voices while demonstrating resilience against noise reduction methods. Second, we develop a protocol that enables efficient channel state estimation and secure information exchange between two communication entities. Based on this information, we propose a lightweight algorithm for voice retrieval during communication. We develop a prototype of \texttt{SecHeadset} and evaluate its performance with 8 widely-used applications, including Telegram and Skype. It reduces the voice recognition accuracy of various adversaries to below 15\% while maintaining communication quality. We also integrate \texttt{SecHeadset} with off-the-shelf portable devices and verify its real-world effectiveness.},
+  author = {Huang, Peng and Pan, Kun and Wang, Qinglong and Cheng, Peng and Lu, Li and Ba, Zhongjie and Ren, Kui},
+  publisher = {Association for Computing Machinery},
+  code = {https://github.com/SecHeadset/SecHeadset},
+  html = {https://secheadset.github.io/},
+  month = {April},
+  year = {2025},
+  selected = {true},
+}
 @article{infomasker2023,
-  abbr = {NDSS},
+  abbr = {NDSS'23},
   title = {InfoMasker: Preventing Eavesdropping Using Phoneme-Based Noise},
   abstract = {With the wide deployment of microphone-equipped smart devices, more and more users have concerns that their voices would be secretly recorded. Recent studies show that microphones have nonlinearity and can be jammed by inaudible ultrasound, which leads to the emergence of ultrasonic-based anti-eavesdropping research. However, existing solutions are implemented through energetic masking and require high energy to disturb human voice. Since ultrasonic noise can only remain inaudible at limited energy, such noise can merely cover a short distance and can be easily removed by adversaries, which makes these solutions impractical. In this paper, we explore the idea of informational masking, study the transmission and coverage constraints of ultrasonic jamming, and implement a highly effective anti-eavesdropping system, named InfoMasker. Specifically, we design a phoneme-based noise that is robust against denoising methods and can effectively prevent both humans and machines from understanding the jammed signals. We optimize the ultrasonic transmission method to achieve higher transmission energy and lower signal distortion, then implement a prototype of our system. Experimental results show that InfoMasker can effectively reduce the accuracy of all tested speech recognition systems to below 50\% even at low energies (SNR=0), which is much better than existing noise designs.},
   author = {Huang, Peng and Wei, Yao and Cheng, Peng and Ba, Zhongjie and Lin, Feng and Lu, Li and Zhang, Fan and Ren, Kui},
@@ -17,8 +29,10 @@
   selected = {true},
 }
 
+
+
 @article{textRS2023,
-  abbr = {Okland},
+  abbr = {Okland'24},
   title = {Text-CRS: A Generalized Certified Robustness Framework against Textual Adversarial Attacks},
   author = {Zhang, Xinyu and Hong, Hanbin and Hong, Yuan and Huang, Peng and Wang, Binghui and Ba, Zhongjie and  Ren, Kui},
   publisher = {IEEE},
@@ -31,7 +45,7 @@
 }
 
 @article{ALIF2023,
-  abbr = {Okland},
+  abbr = {Okland'24},
   title = {ALIF: Low-Cost Adversarial Audio Attacks on Black-Box Speech Platforms Using Linguistic Features},
   author = {Cheng, Peng and Wang, Yuwei and Huang, Peng and Ba, Zhongjie and Lin, Xiaodong and Lin, Feng and Lu, Li and Ren, Kui},
   publisher = {IEEE},

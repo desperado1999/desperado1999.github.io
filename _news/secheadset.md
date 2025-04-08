@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2025-03-05 15:59:00-0400
+date: 2025-04-09 15:59:00-0400
 inline: true
 ---
 
-One paper get conditionally accepted in [MobiSys'25](https://www.sigmobile.org/mobisys/2025/) (Acceptance Rate: 18.0%, 42/233)
+Our paper titled "SecHeadset: A Practical Privacy Protection System for Real-time Voice Communication" got accepted in [MobiSys'25](https://www.sigmobile.org/mobisys/2025/) (Acceptance Rate: 18.0%, 42/233)
