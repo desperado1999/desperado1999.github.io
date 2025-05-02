@@ -387,22 +387,7 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-titled-secheadset-a-practical-privacy-protection-system-for-real-time-voice-communication-got-accepted-in-mobisys-25-acceptance-rate-18-0-42-233",
           title: 'Our paper titled “SecHeadset: A Practical Privacy Protection System for Real-time Voice Communication”...',
           description: "",
-          section: "News",},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project.html";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project.html";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project.html";
-            },},{
+          section: "News",},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
