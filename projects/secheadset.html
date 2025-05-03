@@ -1,0 +1,810 @@
+    <html>
+    <head>
+        <meta charset=“UTF-8”>
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,bold,900,600">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		  <!-- Custom styles for this template -->
+ 		 <link href="/assets/css/infomasker.css" rel="stylesheet">
+
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+ 	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+		<title>SecHeadset</title>
+    </head>
+    <body>
+        <div class = "global_container">
+			<div class = "section"  >
+
+				<h1>SecHeadset: A Practical Privacy Protection System for Real-time Voice Communication</h1>
+				<div class ="boxed">
+                    <!-- Intro -->
+					<p> SecHeadset is a practical, plug-and-play, and end-to-end privacy protection hardware system for real-time voice communication. It can prevent any entities other than the two communication parties from eavesdropping on the communication. SecHeadset is compatible with various VoIP applications, such as Telegram, Skype, and WhatsApp. It is also compatible with different communication types, such as VoIP and voice message. 
+					</p>
+				</div>
+    </body>
+
+    <div class ="boxed">
+        <img src="/assets/secheadset_project/intro_overview.png", style="height: auto; width: 70%">
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <h2> Basic Idea </h2>
+    <div class ="boxed">
+        <!-- Intro -->
+        <p> SecHeadset works as an audio relay between users and the communication device. The basic idea is to obfuscate user's voice before sending it to the communication device. In the receiver side, SecHeadset first retrieve the clean audio from the obfuscated audio and then plays it back to users. Specifically, we add phoneme-based noises to the voice for obfuscation. This type of noise has characteristics similar to human voice, which makes it robust to existing deep learning-based denoising techniques. 
+            
+        </p>
+    </div>
+
+    <div class ="boxed">
+        <!--img src="/assets/secheadset_project/introduction_system.pdf" width="800px" height="300px"-->
+        <img src="/assets/secheadset_project/core_idea.png", style="height: auto; width: 70%">
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <h2> Illustration of the original, the obfuscated, and the retrieved voices </h2>
+    <div class ="boxed">
+        <!-- Intro -->
+        <p> The following figure illustrates the spectrum and the time domain signal of the original, the obfuscated, and the retrieved voices processed by SecHeadset.
+            
+        </p>
+    </div>
+
+    <div class ="boxed">
+        <!--img src="/assets/secheadset_project/introduction_system.pdf" width="800px" height="300px"-->
+        <img src="/assets/secheadset_project/blog_demo.png", style="height: auto; width: 100%">
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    
+
+    <!-- <h2> Spectrogram Examples </h2> -->
+
+    <h2> Audio Examples </h2>
+
+    <br>
+
+    <h3> Obfuscated Audio Examples in VoIP Channels</h3>
+    <br>
+    
+    <div style="margin-top=5em;", class = "global_container">
+        <table>
+            <tr>
+            <td> Applications </td>
+            <td> 260-123440-0002 </td>
+            <td> 1188-133604-0015 </td>
+            <td> 3570-5696-0000 </td>
+            <td> 3575-170457-0024 </td>
+
+            </tr>
+
+            <tr>
+                <td> Skype </td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/obfuscated_audio/skype_260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/obfuscated_audio/skype_1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/obfuscated_audio/skype_3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/obfuscated_audio/skype_3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> Telegram </td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/obfuscated_audio/telegram_260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/obfuscated_audio/telegram_1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/obfuscated_audio/telegram_3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/obfuscated_audio/telegram_3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> Viber </td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/obfuscated_audio/viber_260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/obfuscated_audio/viber_1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/obfuscated_audio/viber_3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/obfuscated_audio/viber_3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> Messenger </td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/obfuscated_audio/messenger_260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/obfuscated_audio/messenger_1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/obfuscated_audio/messenger_3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/obfuscated_audio/messenger_3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> Line</td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/obfuscated_audio/line_260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/obfuscated_audio/line_1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/obfuscated_audio/line_3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/obfuscated_audio/line_3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+            <tr>
+                <td> DingTalk</td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/obfuscated_audio/dingtalk_260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/obfuscated_audio/dingtalk_1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/obfuscated_audio/dingtalk_3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/obfuscated_audio/dingtalk_3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+        </table>
+
+        <script>
+            function show_hide_text(section_name) {
+                var x = document.getElementById(section_name);
+                if(x.style.display == 'none'){
+                    x.style.display = 'block';
+                }else{
+                    x.style.display = 'none';
+                }
+            }
+        </script>
+
+    </div>
+    <p>
+        The original audios are sampled from the test-clean subset of LibriSpeech
+    </p>
+
+    <br>
+    <br>
+
+    <h3> Retrieved Clean Audio in VoIP Channels </h3>
+    <div style="margin-top=5em;", class = "global_container">
+        <table>
+            <tr>
+            <td> Applications </td>
+            <td> 260-123440-0002 </td>
+            <td> 1188-133604-0015 </td>
+            <td> 3570-5696-0000 </td>
+            <td> 3575-170457-0024 </td>
+
+            </tr>
+
+            <tr>
+                <td> Skype </td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_voip/skype_260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_voip/skype_1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_voip/skype_3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_voip/skype_3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> Telegram </td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_voip/telegram_260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_voip/telegram_1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_voip/telegram_3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_voip/telegram_3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> Viber </td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_voip/viber_260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_voip/viber_1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_voip/viber_3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_voip/viber_3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> Messenger </td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_voip/messenger_260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_voip/messenger_1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_voip/messenger_3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_voip/messenger_3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> Line</td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_voip/line_260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_voip/line_1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_voip/line_3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_voip/line_3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+            <tr>
+                <td> DingTalk</td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_voip/dingtalk_260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_voip/dingtalk_1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_voip/dingtalk_3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_voip/dingtalk_3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+    <br>
+    <h3> Retrieved Clean Audio in Voice Message Channels </h3>
+    <div style="margin-top=5em;", class = "global_container">
+        <table>
+            <tr>
+            <td> Applications </td>
+            <td> 260-123440-0002 </td>
+            <td> 1188-133604-0015 </td>
+            <td> 3570-5696-0000 </td>
+            <td> 3575-170457-0024 </td>
+
+            </tr>
+
+            <tr>
+                <td> Skype </td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/skype_260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/skype_1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/skype_3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/skype_3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> Telegram </td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/telegram_260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/telegram_1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/telegram_3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/telegram_3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> Viber </td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/viber_260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/viber_1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/viber_3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/viber_3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> Messenger </td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/messenger_260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/messenger_1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/messenger_3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/messenger_3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> Line</td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/line_260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/line_1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/line_3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/line_3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+            <tr>
+                <td> DingTalk</td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/dingtalk_260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/dingtalk_1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/dingtalk_3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/dingtalk_3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+            <tr>
+                <td> WhatsApp</td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/whatsapp_260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/whatsapp_1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/whatsapp_3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/whatsapp_3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+            <tr>
+                <td> WeChat </td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/wechat_260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/wechat_1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/wechat_3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/retrieved_audio_vm/wechat_3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <br>
+    <br>
+    <h3> Retrieved Clean Audio in Telegram VoIP with Different Network Bandwidths</h3>
+    <div style="margin-top=5em;", class = "global_container">
+        <table>
+            <tr>
+            <td> Bandwith </td>
+            <td> 260-123440-0002 </td>
+            <td> 1188-133604-0015 </td>
+            <td> 3570-5696-0000 </td>
+            <td> 3575-170457-0024 </td>
+            </tr>
+
+            <tr>
+                <td> 1 mbps</td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/audio_bandwidth/1000_260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/audio_bandwidth/1000_1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/audio_bandwidth/1000_3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/audio_bandwidth/1000_3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> 500 kbps</td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/audio_bandwidth/500_260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/audio_bandwidth/500_1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/audio_bandwidth/500_3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/audio_bandwidth/500_3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+            <tr>
+                <td> 100 kbps</td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/audio_bandwidth/100_260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/audio_bandwidth/100_1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/audio_bandwidth/100_3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/audio_bandwidth/100_3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+            <tr>
+                <td> 60 kbps</td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/audio_bandwidth/60_260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/audio_bandwidth/60_1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/audio_bandwidth/60_3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/audio_bandwidth/60_3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+    <br>
+    <h3> Retrieved Clean Audio Under Defferent Noise Energy Levels (Telegram VoIP Channel)</h3>
+
+
+    <div style="margin-top=5em;", class = "global_container">
+        <table>
+            <tr>
+            <td> SNR </td>
+            <td> 260-123440-0002 </td>
+            <td> 1188-133604-0015 </td>
+            <td> 3570-5696-0000 </td>
+            <td> 3575-170457-0024 </td>
+            </tr>
+
+            <tr>
+                <td> -2 </td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-2_denoised/260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-2_denoised/1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-2_denoised/3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-2_denoised/3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> -4 </td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-4_denoised/260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-4_denoised/1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-4_denoised/3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-4_denoised/3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> -6 </td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-6_denoised/260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-6_denoised/1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-6_denoised/3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-6_denoised/3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> -8 </td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-8_denoised/260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-8_denoised/1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-8_denoised/3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-8_denoised/3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> -9 </td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-9_denoised/260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-9_denoised/1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-9_denoised/3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-9_denoised/3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> -10 </td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-10_denoised/260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-10_denoised/1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-10_denoised/3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-10_denoised/3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+
+            <tr>
+                <td> -12 </td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-12_denoised/260.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-12_denoised/1188.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-12_denoised/3570.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="/assets/secheadset_project/impact_of_snr/snr_-12_denoised/3575.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+        </table>
+    </div>
+
+        </table>
+        
+        <br>
+        <br>
+        <br>
+
+        <div class ="boxed">
+            <!-- Intro -->
+            <p> The following figure shows the spectrogram of the first 2 seconds of the retrieved audio (3570-5696-0000) under different obfuscation noise levels. And the red rectangle marks out some typical regions that indicates the effect of noise levels. With the increase of noise levels, the spectrogram becomes more blurred and noising, especially for the harmonic in voices, making the voice harder to be recognized. 
+                
+            </p>
+        </div>
+    
+        <div class ="boxed">
+            <img src="/assets/secheadset_project/diff_snr_spec.png", style="height: auto; width: 100%">
+    
+        </div>
+
+</html>
